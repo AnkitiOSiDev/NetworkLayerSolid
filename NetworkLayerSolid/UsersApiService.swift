@@ -6,6 +6,12 @@
 //
 
 import Foundation
+import Networking
+
+
+struct User: ResponseBody {
+    let name: String?
+}
 
 enum UsersApiService {
     case getUsers

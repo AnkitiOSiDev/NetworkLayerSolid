@@ -7,24 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC3766FE2BE6B7A800B7243A /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3766FD2BE6B7A800B7243A /* Networking.framework */; };
+		BC3766FF2BE6B7A800B7243A /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC3766FD2BE6B7A800B7243A /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BC5456B02BE64BFC0021421C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456AF2BE64BFC0021421C /* AppDelegate.swift */; };
 		BC5456B22BE64BFC0021421C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456B12BE64BFC0021421C /* SceneDelegate.swift */; };
 		BC5456B42BE64BFC0021421C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456B32BE64BFC0021421C /* ViewController.swift */; };
 		BC5456B72BE64BFC0021421C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5456B52BE64BFC0021421C /* Main.storyboard */; };
 		BC5456B92BE64C020021421C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5456B82BE64C020021421C /* Assets.xcassets */; };
 		BC5456BC2BE64C020021421C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5456BA2BE64C020021421C /* LaunchScreen.storyboard */; };
-		BC5456C42BE64C430021421C /* ApiRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456C32BE64C430021421C /* ApiRequestable.swift */; };
-		BC5456C62BE64EB30021421C /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456C52BE64EB30021421C /* RequestBody.swift */; };
 		BC5456C82BE64EDC0021421C /* UsersApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456C72BE64EDC0021421C /* UsersApiService.swift */; };
-		BC5456CA2BE64F150021421C /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456C92BE64F150021421C /* HttpMethod.swift */; };
-		BC5456CC2BE64FAB0021421C /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456CB2BE64FAB0021421C /* ApiService.swift */; };
-		BC5456CE2BE64FE70021421C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456CD2BE64FE70021421C /* NetworkManager.swift */; };
-		BC5456D02BE650090021421C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456CF2BE650090021421C /* NetworkError.swift */; };
-		BC5456D22BE653090021421C /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456D12BE653090021421C /* ResponseParser.swift */; };
 		BCCBCA842BE6A58700243F8C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBCA832BE6A58700243F8C /* UserService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BC3767002BE6B7A800B7243A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BC3766FF2BE6B7A800B7243A /* Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BC3766FD2BE6B7A800B7243A /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5456AC2BE64BFC0021421C /* NetworkLayerSolid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerSolid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5456AF2BE64BFC0021421C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5456B12BE64BFC0021421C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,14 +43,7 @@
 		BC5456B82BE64C020021421C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5456BB2BE64C020021421C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5456BD2BE64C020021421C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC5456C32BE64C430021421C /* ApiRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestable.swift; sourceTree = "<group>"; };
-		BC5456C52BE64EB30021421C /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
 		BC5456C72BE64EDC0021421C /* UsersApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersApiService.swift; sourceTree = "<group>"; };
-		BC5456C92BE64F150021421C /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
-		BC5456CB2BE64FAB0021421C /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		BC5456CD2BE64FE70021421C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		BC5456CF2BE650090021421C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		BC5456D12BE653090021421C /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
 		BCCBCA832BE6A58700243F8C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,24 +52,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3766FE2BE6B7A800B7243A /* Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC37669D2BE6A6F500B7243A /* ApiService */ = {
+		BC3766FC2BE6B7A800B7243A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BC5456C32BE64C430021421C /* ApiRequestable.swift */,
-				BC5456C92BE64F150021421C /* HttpMethod.swift */,
-				BC5456C52BE64EB30021421C /* RequestBody.swift */,
-				BC5456CB2BE64FAB0021421C /* ApiService.swift */,
-				BC5456CD2BE64FE70021421C /* NetworkManager.swift */,
-				BC5456CF2BE650090021421C /* NetworkError.swift */,
-				BC5456D12BE653090021421C /* ResponseParser.swift */,
+				BC3766FD2BE6B7A800B7243A /* Networking.framework */,
 			);
-			path = ApiService;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC5456A32BE64BFC0021421C = {
@@ -74,6 +72,7 @@
 			children = (
 				BC5456AE2BE64BFC0021421C /* NetworkLayerSolid */,
 				BC5456AD2BE64BFC0021421C /* Products */,
+				BC3766FC2BE6B7A800B7243A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,7 +92,6 @@
 				BC5456B32BE64BFC0021421C /* ViewController.swift */,
 				BCCBCA832BE6A58700243F8C /* UserService.swift */,
 				BC5456C72BE64EDC0021421C /* UsersApiService.swift */,
-				BC37669D2BE6A6F500B7243A /* ApiService */,
 				BC5456B52BE64BFC0021421C /* Main.storyboard */,
 				BC5456B82BE64C020021421C /* Assets.xcassets */,
 				BC5456BA2BE64C020021421C /* LaunchScreen.storyboard */,
@@ -112,6 +110,7 @@
 				BC5456A82BE64BFC0021421C /* Sources */,
 				BC5456A92BE64BFC0021421C /* Frameworks */,
 				BC5456AA2BE64BFC0021421C /* Resources */,
+				BC3767002BE6B7A800B7243A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,17 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5456B42BE64BFC0021421C /* ViewController.swift in Sources */,
-				BC5456D22BE653090021421C /* ResponseParser.swift in Sources */,
 				BC5456B02BE64BFC0021421C /* AppDelegate.swift in Sources */,
-				BC5456C42BE64C430021421C /* ApiRequestable.swift in Sources */,
-				BC5456CA2BE64F150021421C /* HttpMethod.swift in Sources */,
-				BC5456CE2BE64FE70021421C /* NetworkManager.swift in Sources */,
-				BC5456C62BE64EB30021421C /* RequestBody.swift in Sources */,
 				BC5456B22BE64BFC0021421C /* SceneDelegate.swift in Sources */,
 				BCCBCA842BE6A58700243F8C /* UserService.swift in Sources */,
-				BC5456CC2BE64FAB0021421C /* ApiService.swift in Sources */,
 				BC5456C82BE64EDC0021421C /* UsersApiService.swift in Sources */,
-				BC5456D02BE650090021421C /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
