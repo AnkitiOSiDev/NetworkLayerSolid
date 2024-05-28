@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC3766FE2BE6B7A800B7243A /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3766FD2BE6B7A800B7243A /* Networking.framework */; };
 		BC3766FF2BE6B7A800B7243A /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC3766FD2BE6B7A800B7243A /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC3D3E7B2C0238A700E10F0D /* NetworkLayerSolidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D3E7A2C0238A700E10F0D /* NetworkLayerSolidTests.swift */; };
 		BC5456B02BE64BFC0021421C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456AF2BE64BFC0021421C /* AppDelegate.swift */; };
 		BC5456B22BE64BFC0021421C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456B12BE64BFC0021421C /* SceneDelegate.swift */; };
 		BC5456B42BE64BFC0021421C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456B32BE64BFC0021421C /* ViewController.swift */; };
@@ -18,6 +19,16 @@
 		BC5456C82BE64EDC0021421C /* UsersApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5456C72BE64EDC0021421C /* UsersApiService.swift */; };
 		BCCBCA842BE6A58700243F8C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBCA832BE6A58700243F8C /* UserService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC3D3E7C2C0238A700E10F0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC5456A42BE64BFC0021421C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC5456AB2BE64BFC0021421C;
+			remoteInfo = NetworkLayerSolid;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		BC3767002BE6B7A800B7243A /* Embed Frameworks */ = {
@@ -35,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		BC3766FD2BE6B7A800B7243A /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3D3E782C0238A700E10F0D /* NetworkLayerSolidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerSolidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3D3E7A2C0238A700E10F0D /* NetworkLayerSolidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerSolidTests.swift; sourceTree = "<group>"; };
 		BC5456AC2BE64BFC0021421C /* NetworkLayerSolid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerSolid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5456AF2BE64BFC0021421C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5456B12BE64BFC0021421C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BC3D3E752C0238A700E10F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC5456A92BE64BFC0021421C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,10 +87,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC3D3E792C0238A700E10F0D /* NetworkLayerSolidTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC3D3E7A2C0238A700E10F0D /* NetworkLayerSolidTests.swift */,
+			);
+			path = NetworkLayerSolidTests;
+			sourceTree = "<group>";
+		};
 		BC5456A32BE64BFC0021421C = {
 			isa = PBXGroup;
 			children = (
 				BC5456AE2BE64BFC0021421C /* NetworkLayerSolid */,
+				BC3D3E792C0238A700E10F0D /* NetworkLayerSolidTests */,
 				BC5456AD2BE64BFC0021421C /* Products */,
 				BC3766FC2BE6B7A800B7243A /* Frameworks */,
 			);
@@ -80,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				BC5456AC2BE64BFC0021421C /* NetworkLayerSolid.app */,
+				BC3D3E782C0238A700E10F0D /* NetworkLayerSolidTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +133,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BC3D3E772C0238A700E10F0D /* NetworkLayerSolidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC3D3E802C0238A700E10F0D /* Build configuration list for PBXNativeTarget "NetworkLayerSolidTests" */;
+			buildPhases = (
+				BC3D3E742C0238A700E10F0D /* Sources */,
+				BC3D3E752C0238A700E10F0D /* Frameworks */,
+				BC3D3E762C0238A700E10F0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC3D3E7D2C0238A700E10F0D /* PBXTargetDependency */,
+			);
+			name = NetworkLayerSolidTests;
+			productName = NetworkLayerSolidTests;
+			productReference = BC3D3E782C0238A700E10F0D /* NetworkLayerSolidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BC5456AB2BE64BFC0021421C /* NetworkLayerSolid */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC5456C02BE64C020021421C /* Build configuration list for PBXNativeTarget "NetworkLayerSolid" */;
@@ -131,6 +179,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					BC3D3E772C0238A700E10F0D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = BC5456AB2BE64BFC0021421C;
+					};
 					BC5456AB2BE64BFC0021421C = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -150,11 +202,19 @@
 			projectRoot = "";
 			targets = (
 				BC5456AB2BE64BFC0021421C /* NetworkLayerSolid */,
+				BC3D3E772C0238A700E10F0D /* NetworkLayerSolidTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BC3D3E762C0238A700E10F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC5456AA2BE64BFC0021421C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,6 +228,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BC3D3E742C0238A700E10F0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3D3E7B2C0238A700E10F0D /* NetworkLayerSolidTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC5456A82BE64BFC0021421C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +249,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC3D3E7D2C0238A700E10F0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC5456AB2BE64BFC0021421C /* NetworkLayerSolid */;
+			targetProxy = BC3D3E7C2C0238A700E10F0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BC5456B52BE64BFC0021421C /* Main.storyboard */ = {
@@ -202,6 +278,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BC3D3E7E2C0238A700E10F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.com.NetworkLayerSolidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkLayerSolid.app/NetworkLayerSolid";
+			};
+			name = Debug;
+		};
+		BC3D3E7F2C0238A700E10F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.com.NetworkLayerSolidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkLayerSolid.app/NetworkLayerSolid";
+			};
+			name = Release;
+		};
 		BC5456BE2BE64C020021421C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -375,6 +485,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BC3D3E802C0238A700E10F0D /* Build configuration list for PBXNativeTarget "NetworkLayerSolidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC3D3E7E2C0238A700E10F0D /* Debug */,
+				BC3D3E7F2C0238A700E10F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BC5456A72BE64BFC0021421C /* Build configuration list for PBXProject "NetworkLayerSolid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
